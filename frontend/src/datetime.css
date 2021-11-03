@@ -1,0 +1,9 @@
+.date-time-picker-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+div.date-time-picker > input.form-control {
+    padding: 4px !important;
+}

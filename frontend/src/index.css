@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* @import url("https://cdn.jsdelivr.net/npm/semantic-ui-calendar-react@latest/dist/umd/semantic-ui-calendar-react.js"); */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Poppins";
+  color: #333333;
+  background: #EEEEEE;
+}
+
+/* Nav Section */
+.header {
+  height: 50px;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-bottom: 1px solid #333333;
+  margin-bottom: 5px;
+}
+
+.main-tag {
+  color: #333333;
+  font-size: 24px;
+}
+
+.add-metric-button{
+  background-color: #333333;
+  color: #ffffff;
+  padding: 3px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Main Section */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+  margin-bottom: 50px;
+}
+
+/* Metrics Page */
+.metrics-page {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.metric-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.metric-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.metric-tab-item-body {
+  padding: 4px;
+  font-size: 80px;
+  text-align: center;
+}
+
+.metric-timeline {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #ffffff;
+  /* padding: 20px; */
+  padding: 0 20px 20px 20px;
+}
+
+.metric-header-calender-datetime-titles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.metric-timeline-average {
+  padding-left: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.metric-timeline-average-label {
+  display: block;
+  font-size: .63rem;
+  text-transform: uppercase;
+  color: rgba(0,0,0,.4);
+  letter-spacing: 1px;
+}
+
+.metric-timeline-tabs {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.metric-timeline-tabs-list {
+  display: flex;
+  justify-content: right;
+  padding: 20px 20px 5px 0;
+  width: 100%;
+}
+
+.metric-timeline-tabs-item {
+  list-style: none;
+  margin-right: 5px;
+  padding: 0 8px 0 8px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.metric-timeline-empty-graph {
+  height: 400px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 400px; 
+}
+
+.active {
+  color: #fff;
+  background-color: #333333;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-active {
+  display: block;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+
+.submit-button {
+  background-color: #333333;
+  color: #ffffff;
+  margin-top: 15px;
+  width: 100%;
+  height: 40px;
+  border:none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+
